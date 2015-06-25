@@ -1,5 +1,8 @@
 [
-	{ "keys": ["ctrl+alt+c","ctrl+alt+c"], "command": "git_commit" },
-	{ "keys": ["ctrl+alt+c","ctrl+alt+p"], "command": "git_push" },
-	{ "keys": ["ctrl+alt+b"], "command": "git_bash" }
+	{ "keys": ["alt+c"], "command": "git_commit" },
+	{ "keys": ["alt+l"], "command": "git_log" },
+	{ "keys": ["alt+m"], "command": "git_merge" },
+	{ "keys": ["alt+p"], "command": "git_pull" },
+	{ "keys": ["alt+shift+p"], "command": "git_push" },
+	{ "keys": ["alt+l"], "command": "git_pull" }
 ]

@@ -124,6 +124,18 @@ class GitPullCommand(TortoiseGITCommand):
 	def run(self, paths=None):
 		TortoiseGITCommand.run(self, 'pull /closeonend:3', paths)
 
+class GitLogCommand(TortoiseGITCommand):
+	def run(self, paths=None):
+		TortoiseGITCommand.run(self, 'log', paths)
+
+class GitMergeCommand(TortoiseGITCommand):
+	def run(self, paths=None):
+		TortoiseGITCommand.run(self, 'merge', paths)
+
+class GitSwitchCommand(TortoiseGITCommand):
+	def run(self, paths=None):
+		TortoiseGITCommand.run(self, 'switch', paths)
+
 class GitBashCommand(TortoiseGITBashCommand):
 	def run(self, paths=None):
 		TortoiseGITBashCommand.run(self, paths)
@@ -132,11 +144,6 @@ class GitBashCommand(TortoiseGITBashCommand):
 class GitRevertCommand(MutatingTortoiseGITCommand):
 	def run(self, paths=None):
 		MutatingTortoiseGITCommand.run(self, 'revert', paths)
-
-
-class GitLogCommand(TortoiseGITCommand):
-	def run(self, paths=None):
-		TortoiseGITCommand.run(self, 'log', paths)
 
 
 class GitDiffCommand(TortoiseGITCommand):
